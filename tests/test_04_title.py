@@ -163,6 +163,7 @@ class Test04TitleAPI:
             'Значение `id` нет или не является целым числом.'
         )
         assert data.get('category') == categories[0], (
+            f'{categories[0]} --------------------{data.get("category")} \n\n'
             'Проверьте, что при GET запросе `/api/v1/titles/{title_id}/` возвращаете данные объекта. '
             'Значение `category` неправильное.'
         )
